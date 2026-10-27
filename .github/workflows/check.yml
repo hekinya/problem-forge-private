@@ -1,0 +1,20 @@
+name: Check problems
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: hekinya/problem-forge
+          path: _problem-forge
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check problem folders
+        run: python _problem-forge/tools/forge.py check --root problems
