@@ -11,8 +11,8 @@ assert not target.exists(), target
 (target / 'testdata').mkdir()
 (target / 'problem.yaml').write_text(
     f'pid: {pid}\nowner: 1\ntitle: Yes-Yes?\ntag: []\nnSubmit: 0\nnAccept: 0\n', encoding='utf-8')
-(target / 'problem_zh.md').write_text('![题面第 1 页](file://statement-01.png)\n', encoding='utf-8')
-shutil.copy2(root/'statement-01.png', target/'additional_file/statement-01.png')
+(target / 'problem_zh.md').write_text('@[pdf](file://statement.pdf)\n', encoding='utf-8')
+shutil.copy2(root/'statement.pdf', target/'additional_file/statement.pdf')
 cases = []
 for folder, prefix in [('samples','sample'), ('tests','case')]:
     for src in sorted((root/'data'/folder).glob('*.in')):
