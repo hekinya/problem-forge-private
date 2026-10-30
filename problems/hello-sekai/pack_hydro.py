@@ -8,7 +8,7 @@ from zipfile import ZIP_DEFLATED, ZipFile
 
 ROOT = Path(__file__).resolve().parent
 parser = argparse.ArgumentParser()
-parser.add_argument("pid", help="Confirmed Hydro problem ID, such as ZXS2026C-branch")
+parser.add_argument("pid", help="Confirmed Hydro problem ID, such as ZXS2026C")
 args = parser.parse_args()
 if not re.fullmatch(r"[A-Za-z][A-Za-z0-9-]{0,20}", args.pid):
     parser.error("invalid Hydro PID")

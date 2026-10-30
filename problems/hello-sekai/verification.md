@@ -5,7 +5,7 @@
 - 双解交叉验证：C++ `solution.cpp` 与独立 Python `solution2.py` 在空输入下输出（归一化换行后）一致，均为 `Hello sekai\n`。
 - 错误解验题：`wrong_hello_sekai.cpp` 输出 `Hello Sekai`（第二个单词大小写不同），被判定为与答案不一致。
 - 题面 PDF：`statement.pdf` 为单页；`render_preview.py` 校验页头、标题、输入文件 / 输出文件 / 时间限制 / 内存限制四项、输入格式、输出格式与样例文本均可见。`statement-preview.png` 已目视检查：中文与英文正常、样例输入输出表格边框与对齐正常、无题解内容。
-- Hydro 导出包：`C-ZXS2026C-branch`，`problem.yaml` 的 pid 为 `ZXS2026C-branch`；`testdata` 含 `sample01.*` 与 `case01.*` 各一对，`.in` / `.ans` 一一对应；`config.yaml` 为 `type: default`、`time: 1s`、`memory: 256m`；`additional_file/statement.pdf` 与内部原件字节一致；`problem_zh.md` 使用 `@[pdf](file://statement.pdf)`；压缩包内容与导出目录一致。
+- Hydro 导出包：`C-ZXS2026Cbranch`，`problem.yaml` 的 pid 为 `ZXS2026Cbranch`；`testdata` 含 `sample01.*` 与 `case01.*` 各一对，`.in` / `.ans` 一一对应；`config.yaml` 为 `type: default`、`time: 1s`、`memory: 256m`；`additional_file/statement.pdf` 与内部原件字节一致；`problem_zh.md` 使用 `@[pdf](file://statement.pdf)`；压缩包内容与导出目录一致。
 - 无输入题目的数据特殊性：本题只有一个可能的输入（空），因此样例与测试内容相同，保留 sample / case 两套文件仅为沿用既有目录约定；不存在可构造的 min / max 或边界数据，验题改为逐字节核对答案与题面输出完全一致。
 - 本题是给参赛者的示例题，题目内容与 C 题《Hello World》不同，但共用相同的时限、内存、题面版式与判题配置；未改动 C 题的任何文件。
-- 尚待在目标 Hydro 实例验证导入与 PDF 嵌入，并确认该实例是否接受含连字符的题号 `ZXS2026C-branch`；当前不能声称压缩包已在该实例直接导入成功。
+- 题号已按实例要求改为不含连字符的 `ZXS2026Cbranch`，并重新导出。尚待在目标 Hydro 实例验证导入与 PDF 嵌入；当前不能声称压缩包已在该实例直接导入成功。
