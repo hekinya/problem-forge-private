@@ -1,0 +1,6 @@
+#define CPLIB_VALIDATOR_DEFAULT_INITIALIZER ::cplib_initializers::testlib::validator::Initializer()
+#include "testlib_validator.hpp"
+#include "cplib.hpp"
+#include "problem.23.hpp"
+
+CPLIB_REGISTER_VALIDATOR(Input, traits);

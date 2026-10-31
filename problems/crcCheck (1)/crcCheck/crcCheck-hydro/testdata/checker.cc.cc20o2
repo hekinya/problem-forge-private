@@ -1,0 +1,6 @@
+#define CPLIB_CHECKER_DEFAULT_INITIALIZER ::cplib_initializers::syzoj::checker::Initializer()
+#include "syzoj_checker.hpp"
+#include "cplib.hpp"
+#include "problem.23.hpp"
+
+CPLIB_REGISTER_CHECKER(Input, Output);
