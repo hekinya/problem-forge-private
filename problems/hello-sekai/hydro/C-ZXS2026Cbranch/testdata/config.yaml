@@ -1,9 +1,0 @@
-type: default
-checker_type: default
-time: 1s
-memory: 256m
-cases:
-  - input: sample01.in
-    output: sample01.ans
-  - input: case01.in
-    output: case01.ans
